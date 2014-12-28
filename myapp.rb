@@ -1,8 +1,8 @@
 require 'sinatra'
+require 'active_record'
+require './config/environments'
 
-configure :production do
-  require 'newrelic_rpm'
-end
+ENV['RACK_ENV'] ||= 'development'
 
 get '/' do
   erb :index
