@@ -3,9 +3,10 @@ ruby '2.1.5'
 
 gem 'sinatra'
 gem 'better_errors'
-gem 'activerecord'
+gem 'sinatra-activerecord'
 gem 'rake'
 gem 'pry'
+gem 'faker'
 
 group :production do
   gem 'pg'
