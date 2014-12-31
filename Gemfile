@@ -6,7 +6,9 @@ gem 'better_errors'
 gem 'sinatra-activerecord'
 gem 'rake'
 gem 'pry'
+gem 'pry-byebug'
 gem 'faker'
+gem 'rerun'
 
 group :production do
   gem 'pg'
