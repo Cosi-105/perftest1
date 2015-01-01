@@ -1,7 +1,7 @@
 puts "[]"
 configure :production do
   puts "[production]"
-	db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
+	db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/production')
 
 	ActiveRecord::Base.establish_connection(
 			:adapter => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
