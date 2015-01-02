@@ -2,6 +2,7 @@ ENV['RACK_ENV'] ||= 'development'
 
 require 'sinatra'
 require 'sinatra/activerecord'
+require 'newrelic_rpm'
 
 class People < ActiveRecord::Base
 end
