@@ -3,7 +3,6 @@ ENV['RACK_ENV'] ||= 'development'
 require 'sinatra'
 require 'sinatra/activerecord'
 #require 'newrelic_rpm'
-require 'oboe-heroku'
 
 class People < ActiveRecord::Base
 end
