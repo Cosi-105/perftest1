@@ -42,7 +42,10 @@ GEM
       rb-inotify (>= 0.9)
     method_source (0.8.2)
     minitest (5.5.0)
-    newrelic_rpm (3.9.8.273)
+    oboe (2.7.7.1)
+      json
+    oboe-heroku (0.9.17.4)
+      oboe (>= 2.7.6.2)
     pg (0.17.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -82,7 +85,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   faker
-  newrelic_rpm
+  oboe-heroku
   pg
   pry
   pry-byebug

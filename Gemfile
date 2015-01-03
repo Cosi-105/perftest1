@@ -9,7 +9,8 @@ gem 'faker'
 
 group :production do
   gem 'pg'
-  gem 'newrelic_rpm'
+#  gem 'newrelic_rpm'
+	gem 'oboe-heroku'
 end
 
 group :development do
