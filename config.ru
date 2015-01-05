@@ -1,4 +1,4 @@
 require './myapp'
-require 'oboe-heroku'
+#require 'oboe-heroku'
 run Sinatra::Application
 
