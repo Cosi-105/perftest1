@@ -1,6 +1,4 @@
-puts "[]"
 configure :production do
-  puts "[production]"
   ENV['RACK_ENV'] = 'production'
 	db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/production')
 
@@ -14,7 +12,6 @@ configure :production do
 end
 
 configure :development do
-  ENV['RACK_ENV'] = 'development'
   puts "[development]"
   set :database, 'sqlite:///db/development.sqlite3'
 end

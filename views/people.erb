@@ -1,0 +1,13 @@
+<h1>Tests on People Table</h1>
+
+<p>Table People has <%= @count %> records</p>
+<p>
+	For test, records have a column called random which contain random numbers between 1 and 999000 and another one called random_idx, with random numbers in the same range, but that is also indexed
+</p>
+
+<h2>Available Tests</h2>
+
+<ul>
+	<li><%= link_to('People sampled, indexed', "/people/sample/indexed/100")%></li>
+	<li><%= link_to('People sampled, not indexed','/people/sample/noindex/100')%></li>
+</ul>

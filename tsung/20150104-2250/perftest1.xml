@@ -1,0 +1,25 @@
+<?xml version="1.0"?><tsung loglevel="notice" version="1.0">
+
+  <clients>
+    <client host="localhost" use_controller_vm="true"/>
+  </clients>
+  
+  <servers>
+  <server host="perftest1.heroku.com" port="80" type="tcp"/>
+</servers>
+
+<load>
+<arrivalphase phase="1" duration="2" unit="minute">
+   <users interarrival="2" unit="second"/>
+ </arrivalphase>
+</load>
+
+  <sessions>
+  <session name="http-example" probability="100" type="ts_http">
+
+    <request> <http url="/" method="GET" version="1.1"/> </request>
+    <thinktime value="20" random="true"/>
+    
+  </session>
+ </sessions>
+</tsung>
