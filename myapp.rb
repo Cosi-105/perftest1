@@ -13,6 +13,10 @@ get '/' do
   erb :index
 end
 
+get '/loaderio-2e932e77ab70cafc7e6bb6087e367a68/' do
+  "loaderio-2e932e77ab70cafc7e6bb6087e367a68"
+end
+
 get '/people' do
 	@count = People.count
   erb :people
