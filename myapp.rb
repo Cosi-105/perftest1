@@ -13,7 +13,7 @@ get '/' do
   erb :index
 end
 
-get '/loaderio-2e932e77ab70cafc7e6bb6087e367a68/' do
+get '/loaderio-bb5a35bfa0186405c4a48a10d3f67e60/' do
   "loaderio-bb5a35bfa0186405c4a48a10d3f67e60"
 end
 
